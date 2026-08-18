@@ -1,18 +1,46 @@
 {
-  "name": "fabs-foot",
+  "name": "sports-predictions-ai",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "18.x"
-  },
+  "description": "Fab's Foot - Application de pronostics sportifs alimentée par l'IA",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint .",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "@ai-sdk/openai": "^1.0.0",
+    "@prisma/client": "^5.8.0",
+    "@vercel/functions": "^1.0.0",
+    "@vercel/postgres": "^0.10.0",
+    "ai": "^3.0.0",
+    "axios": "^1.6.0",
+    "ioredis": "^5.3.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ws": "^8.16.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.0.0",
+    "postcss": "^8.4.0",
+    "prisma": "^5.8.0",
+    "tailwindcss": "^3.3.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
