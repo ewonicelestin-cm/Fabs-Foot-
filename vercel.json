@@ -4,7 +4,7 @@
   "crons": [
     {
       "path": "/api/cron/predictions",
-      "schedule": "*/10 * * * *"
+      "schedule": "*/0 9 * * * *"
     }
   ]
 }
